@@ -1,4 +1,4 @@
-import { getProducts } from "../data/product";
+import { getProducts } from "../data/products";
 import { Link } from "react-router-dom";
 import ProductCard from "../components/ProductCard";
 
@@ -15,7 +15,6 @@ export default function Home() {
         <div className="product-grid">
           {products.map((product) => (
             <ProductCard key={product.id} product={product} />
-            
           ))}
         </div>
       </div>
